@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: bisque;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 70px;
+    height: 70px;
+    background-color: brown;
+    border-radius: 50%;
+    animation: myanime 1s forwards infinite;
+     display: flex;
+     justify-content: center;
+     overflow: hidden; 
+}
+@keyframes myanime{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
